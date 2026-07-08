@@ -1,1 +1,110 @@
-# VISUAL
+<!DOCTYPE html>
+<html lang="en" class=""><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Exercicios.css">
+  <title>Eventos teste</title>
+
+</head>
+<body>
+  <form method="post" enctype="multipart/form-data" action="https://google.com.br">
+<div id="evento">    
+<input type="hidden">
+    <fieldset>
+      <legend>
+      Nome do evento
+      </legend>
+      <label>
+        <input type="text" required="" class="name" minlength="20" maxlength="30" autofocus size="30">
+      </label>
+    </fieldset>
+   
+    <fieldset>
+      <legend>
+        Descrição do Evento
+      </legend>
+      <label>
+        <textarea required="" name="decrição-do-evento" class="Desc-event" placeholder="Descreva o seu evento aqui" maxlength="10"></textarea>
+      </label>
+    </fieldset>
+   
+    <fieldset>
+      <legend>
+      Data do evento
+      </legend>
+      <label>
+        <input type="date" required="" class="data" min="2026-07-08" max="2026-07-10" name="date-of-event">
+      </label>
+    </fieldset>
+     
+    <fieldset>
+      <legend>
+      Tipo de evento
+      </legend>
+      <label>
+        <select name="Type-of-events" required="select" class="type-event">
+          <option value="">--Selecione--</option>
+          <option>Casual</option>
+          <option>Familiar</option>
+          <option>Aberto</option>
+          <option>Privado</option>
+        </select>
+      </label>
+    </fieldset>
+
+
+  <fieldset>
+      <legend>
+      Vagas para o evento
+      </legend>
+      <label>
+        <input type="number" required="" class="vagas" max="50" placeholder="Maximo de 50 vagas" name="participants">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+      Local Do evento
+      </legend>
+      <label>
+        <input type="radio" required="" name="local">
+          Salvador
+        <input type="radio" required="" name="local">
+          Recife
+        <input type="radio" required="" name="local">
+          São Paulo
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+      Horario do evento
+      </legend>
+      <label>
+        <input type="time" required="" class="time-event" name="Horario">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+      Banner do Evento
+      </legend>
+      <label>
+        <input type="file" accept=".png" required="" class="banner-event" name="banner">
+      </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Email</legend>
+          <label>
+            <input type="email" required name="email" class="email" autocomplete="off">
+          </label>
+    </fieldset>
+
+  <button formtarget="_blank">Criar Evento</button>
+    </div>
+
+  </form>
+
+
+</body></html>
